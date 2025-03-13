@@ -1,0 +1,61 @@
+.fd {
+	display: none;
+	position: fixed;
+	top: 15%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 25%;
+	min-width: 200px;
+	padding: 20px;
+	
+	background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+	/* 活力橙红渐变 */
+	border-radius: 16px;
+	box-shadow: 0 8px 32px rgba(255, 107, 107, 0.2);
+	color: white;
+	font-family: 'Arial Rounded MT Bold', sans-serif;
+}
+
+.fd ul {
+	list-style: none;
+	padding: 0;
+	margin: 10px 0 0 0;
+}
+
+.fd li {
+	padding: 15px;
+	margin-bottom: 10px;
+	background: rgba(255, 255, 255, 0.9);
+	border-radius: 12px;
+	backdrop-filter: blur(4px);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	cursor: pointer;
+	font-size: calc(1vw + 3px);
+}
+
+.fd li:hover {
+	transform: translateX(10px);
+	box-shadow: 0 6px 20px rgba(255, 107, 107, 0.3);
+}
+
+.fd a {
+	text-decoration: none;
+	color: #6c5ce7;
+	/* 梦幻紫色 */
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.fd a::before {
+	content: "🚀";
+	/* 趣味表情符号 */
+	font-size: 1.2em;
+}
+
+.fd a:hover {
+	color: #ff7675;
+	/* 悬停珊瑚色 */
+	text-shadow: 0 2px 4px rgba(108, 92, 231, 0.1);
+}

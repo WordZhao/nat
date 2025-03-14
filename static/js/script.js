@@ -240,9 +240,9 @@ document.addEventListener('click', function(event) {
 
 
 
-// var pageLoading = document.querySelector("#zyyo-loading");
-// window.addEventListener('load', function() {
-//     setTimeout(function () {
-//         pageLoading.style.opacity = '0';
-//     }, 100);
-// });
+var pageLoading = document.querySelector("#zyyo-loading");
+window.addEventListener('load', function() {
+    setTimeout(function () {
+        pageLoading.style.opacity = '0';
+    }, 10);
+});
